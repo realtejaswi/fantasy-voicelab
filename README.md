@@ -119,4 +119,4 @@ The backend is a **Flask** API server that handles text-to-speech generation and
 ---
 
 ## 📺 Website Demonstration
-![Demo Video](https://github.com/realtejaswi/fantasy-voicelab/blob/main/frontend/0810.mp4))
+https://github.com/user-attachments/assets/e5492214-b363-41b3-b115-9ad870cb85cc
