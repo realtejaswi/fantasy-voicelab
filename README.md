@@ -16,7 +16,7 @@ The backend is built upon the logic and concepts from the repository [OpenVoice]
 
 ## Frontend
 
-The frontend is built with **React** and provides an interactive UI for users to input text, select fictional character voices, and generate speech audio dynamically.
+The frontend is built with **React** and provides an interactive UI for users to input text, select fictional character voices, and generate speech audio dynamically. It features a login page that authenticates users with email and password stored in **MongoDB** before granting access to the main voice generation UI.
 
 ### Core Components and Features:
 
@@ -27,6 +27,12 @@ The frontend is built with **React** and provides an interactive UI for users to
     - `audioUrls`: Stores generated audio URLs keyed by character voice name.
     - `loadingStates`: Tracks loading status for each character's audio generation.
     - `errors`: Captures and displays errors related to input or server response.
+
+  - **Login Page:**
+    - Provides a simple login form requesting email and password.
+    - Sends login credentials to the Flask backend for verification and registration.
+    - Uses **MongoDB** to store and manage user credentials securely.
+    - Restricts access to the main voice generation interface until user authentication is successful.
 
   - **Character List:**
     - An array defining fictional characters with their display name, image, and backend voice ID.
@@ -42,6 +48,7 @@ The frontend is built with **React** and provides an interactive UI for users to
     - Uses CSS Grid (`.main-layout`) to arrange character cards in a 3-column responsive grid.
     - Each character card displays an image, name, input box, generate button, error messages, and audio player.
     - Styling handled in `App.css` for a clean and modern UI with focus effects and transitions.
+
 
 ---
 
